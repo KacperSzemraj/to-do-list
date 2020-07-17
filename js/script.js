@@ -53,10 +53,11 @@
             htmlString += `
                 <li
                     class="tasks__item"
-                ${task.done ? " style=\"text-decoration: line-through\"" : ""}
                 >
-                    <button class="tasks__button tasks__button--toggleDone js-done">✔</button>
-                    ${task.content}
+                    <button class="tasks__button tasks__button--toggleDone js-done">
+                        ${task.done ? "✔" : ""}
+                    </button>
+                    <span class="tasks__content">${task.content}</span>
                     <button class="tasks__button tasks__button--remove js-remove">🗑</button>
                 </li>
             `;
