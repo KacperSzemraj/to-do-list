@@ -12,3 +12,35 @@
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
+
+.tasks__button {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.tasks__button--toggleDone {
+    background: hsl(120, 65%, 35%);
+}
+
+.tasks__button--toggleDone:hover {
+    background: hsl(120, 65%, 40%);
+}
+
+.tasks__button--toggleDone:active {
+    background: hsl(120, 65%, 45%);
+}
+
+.tasks__button--remove {
+    background: hsl(0, 65%, 40%);
+}
+
+.tasks__button--remove:hover {
+    background: hsl(0, 65%, 45%);
+}
+
+.tasks__button--remove:active {
+    background: hsl(0, 65%, 50%);
+}

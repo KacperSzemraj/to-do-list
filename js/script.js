@@ -55,9 +55,9 @@
                     class="tasks__item"
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""}
                 >
-                    <button class="js-done">gotowe</button>
+                    <button class="tasks__button tasks__button--toggleDone js-done">✔</button>
                     ${task.content}
-                    <button class="js-remove">usuń</button>
+                    <button class="tasks__button tasks__button--remove js-remove">🗑</button>
                 </li>
             `;
         }
