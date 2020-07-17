@@ -37,10 +37,10 @@
     }
 
     const render = () => {
-        let htmlString = "";
+        let tasksListHTMLContent = "";
 
         for (const task of tasks) {
-            htmlString += `
+            tasksListHTMLContent += `
                 <li
                     class="tasks__item"
                 >
@@ -57,7 +57,7 @@
             `;
         }
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
         bindRemoveEvents();
         bindToggleDoneEvents();
