@@ -17,6 +17,11 @@
     letter-spacing: 1px;
 }
 
+.tasks__content--done {
+    text-decoration: line-through;
+    color: #888888;
+}
+
 .tasks__button {
     border: none;
     color: white;
