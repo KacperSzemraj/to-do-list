@@ -16,6 +16,8 @@ This is a simple task list created for educational purposes. The current version
 4. Click on the green button on the left to mark the task as completed
 5. Click on the red button on the right to delete the task
 
+![Todolist](images/Todo.gif)
+
 ## Technologies
 
 - HTML
