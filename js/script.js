@@ -64,14 +64,11 @@
         });
     }
 
-    const render = () => {
-        let tasksListHTMLContent = "";
-
-        for (const task of tasks) {
-            tasksListHTMLContent += `
-                <li
-                    class="tasks__item"
-                >
+    const renderTasks = () => {
+        const taskToHTML = task => `
+                <li class="
+					tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task
+                ">
                     <button class="tasks__button tasks__button--toggleDone js-done">
                         ${task.done ? "✔" : ""}
                     </button>
@@ -83,12 +80,16 @@
                     </button>
                 </li>
             `;
-        }
 
-        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
+        const tasksElement = document.querySelector(".js-tasks");
+        tasksElement.innerHTML = tasks.map(taskToHTML).join("");
+    };
 
+    const render = () => {
+        renderTasks();
         bindRemoveEvents();
         bindToggleDoneEvents();
+
     };
 
     const onFormSubmit = (event) => {
