@@ -4,6 +4,13 @@
     box-shadow: 0 0 5px #ddd;
 }
 
+.section__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .section__title {
     font-size: 20px;
     padding: 20px;
