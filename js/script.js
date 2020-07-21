@@ -52,7 +52,7 @@
                 removeTask(index);
             });
         });
-    }
+    };
 
     const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
@@ -62,7 +62,7 @@
                 toggleTaskDone(index);
             });
         });
-    }
+    };
 
     const renderTasks = () => {
         const taskToHTML = task => `
