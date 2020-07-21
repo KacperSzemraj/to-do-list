@@ -106,12 +106,28 @@
 		`;
     };
 
+    const bindButtonEvents = () => {
+
+        const markAllDoneButton = document.querySelector(".js-markAllDone");
+
+        if (markAllDoneButton) {
+            markAllDoneButton.addEventListener("click", markAllTasksDone);
+        }
+
+        const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+
+        if (toggleHideDoneTasksButton) {
+            toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
+        }
+    };
+
     const render = () => {
         renderTasks();
         bindRemoveEvents();
         bindToggleDoneEvents();
 
         renderButtons();
+        bindButtonEvents();
     };
 
     const onFormSubmit = (event) => {
