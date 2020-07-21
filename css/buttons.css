@@ -10,3 +10,11 @@
     margin: 0 0 0 20px;
     transition: color 0.3s;
 }
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:disabled {
+    color: #ccc;
+}
