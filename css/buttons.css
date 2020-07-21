@@ -1,5 +1,10 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .buttons__button {
-	color: teal;
+    color: teal;
     background: transparent;
     border: none;
 }
